@@ -3,9 +3,8 @@ $dark: #4F4F4F;
 
 $blue: #015FBF;
 $dark-blue: #12397C;
-$gray-light: #E7E7E7;
+$purple: #4B33A1;
+$violet: #AE2DBE;
 
-$green: #7B9551;
-$dark-green: #4B6042;
-
-$red: #E31E24;
+$gradient-blue-purple: linear-gradient(180deg, $blue 0%, $purple 100%);
+$gradient: linear-gradient(180deg, $violet 0%, $purple 100%);
