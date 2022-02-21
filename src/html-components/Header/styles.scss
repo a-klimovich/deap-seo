@@ -1,0 +1,34 @@
+@import url('../../scss/_variables.scss');
+
+.header {
+  position: relative;
+
+  &__bg-image {
+    width: 100%;
+    z-index: 0;
+
+    img {
+      max-height: 100vh;
+      width: 100%;
+      object-fit: cover;
+    }
+  }
+
+  &__content {
+    position: absolute;
+    left: 13%;
+    bottom: 174px;
+    max-width: 818px;
+
+
+    .title {
+      color: #fff;
+      z-index: 1;
+    }
+
+    .subtitle {
+      color: #C7A1EB;
+      z-index: 1;
+    }
+  }
+}

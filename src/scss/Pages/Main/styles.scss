@@ -1,0 +1,102 @@
+@import "../../_variables.scss";
+
+.main-page {
+  .specialization {
+    padding: 53px 0 116px 0;
+
+    .section-title {
+      margin-bottom: 75px;
+    }
+
+    .specialization-cards-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+  }
+
+  .about {
+    height: 570px;
+    padding: 75px 0 86px 0;
+    background-image: url("../../../assets//section-abut-bg-lg.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: $white;
+
+    .about-title {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      color: $white;
+      margin-bottom: 52px;
+
+      span {
+        margin-bottom: 20px;
+      }
+
+      hr {
+        height: 5px;
+        border: none;
+        width: 100%;
+        max-width: 270px;
+        background-color: $white;
+      }
+    }
+
+    &__text p {
+      font-family: Carisma Gothic, sans-serif;
+      font-size: 28px;
+      line-height: 32px;
+      text-align: justify;
+    }
+
+    @media screen and (max-width: 1024px) {
+      background-image: url("../../../assets//section-abut-bg-md.jpg");
+    }
+    @media screen and (max-width: 768px) {
+      background-image: url("../../../assets//section-abut-bg-sm.jpg");
+    }
+  }
+
+  .partners {
+    padding: 50px 0;
+
+    h2 {
+      margin-bottom: 106px;
+    }
+
+    &__logos-wrapper {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+    }
+
+    .logo-item {
+      width: 320px;
+      height: 170px;
+    }
+  }
+
+  .lifebuoy {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 365px;
+    padding: 75px 0 86px 0;
+    background-image: url("../../../assets/pre-footer.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    color: $white;
+    margin-bottom: 25px;
+
+    h3 {
+      font-weight: bold;
+      font-size: 36px;
+      line-height: 44px;
+      margin-top: 34px;
+    }
+  }
+}

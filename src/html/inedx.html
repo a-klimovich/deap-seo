@@ -3,18 +3,107 @@
   @@include('./utils/head.html')
   <body>
     <div class="wrapper">
-      @@include('./Header/index.html')
+      @@include('./Header/index.html', {
+        imgSizeSmPath: './assets/header-bg_sm.jpg',
+        imgSizeMdPath: './assets/header-bg_md.jpg',
+        imgSizeLgPath: './assets/header-bg_lg.jpg',
+        imgDefault: './assets/header-bg_lg.jpg'
+      })
+
       <main>
-        <h1>Hello</h1>
-        <h2 style="font-weight: 700">WORLD</h2>
-        <p>Создание сайтов</p>
-        <p>Lorem, ipsum dolor sit amet consectetur adipisicing.</p>
-      </main>
-      <footer>
-        <div class="container">
-          io
+        <div class="main-page">
+          <section class="specialization">
+            <div class="container">
+              @@include('./SectionTitle/index.html', {
+                title: 'Наша специализация',
+                textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+                underLineColor: '#828282',
+              })
+    
+              <div class="specialization-cards-wrapper">
+                @@include('./Specialization/Items/item-1.html', {
+                  title : 'Создание и продвижение сайтов',
+                  text : 'Создаем сайты с использованием высокоуровневого языка программирования Python и веб-фреймворка  Django',
+                  linkUrl : '#',
+                })
+    
+                @@include('./Specialization/Items/item-2.html', {
+                  title : 'Social Media Marketing',
+                  text : 'Создание, настройка и продвижение личных и корпоративных страниц в социальных сетях.',
+                  linkUrl : '#',
+                })
+    
+                @@include('./Specialization/Items/item-3.html', {
+                  title : 'Контекстная реклама',
+                  text : 'Настройка и ведение эффективных рекламных кампаний в Google Ads и Яндекс Директе.',
+                  linkUrl : '#',
+                })
+    
+                @@include('./Specialization/Items/item-4.html', {
+                  title : 'Автоматизация бизнеса (CRM)',
+                  text : 'Внедряем уникальную CRM-систему, созданную нами специально, для производственных предприятий.',
+                  linkUrl : '#',
+                })
+              </div>
+            </div>
+          </section>
+
+          <section class="about">
+            <div class="container">
+              <h2 class="about-title">
+                <span>О нас</span>
+                <hr>
+              </h2>
+  
+              <div class="about__text">
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DepthsSEO — это команда практиков со стажем работы от 10 до 14 лет в таких сферах как: 
+                  создание сайтов, SEO продвижение, интернет-маркетинг, программирование, автоматизация бизнеса (СRM), 
+                  видеопродакшн, графический дизайн. Сотрудники DepthsSEO это уже состоявшиеся специалисты, которые продолжают
+                  совершенствоваться и постоянно повышают уровень знаний. Полное погружение в каждый проект и личная ответственность 
+                  за свою работу позволяет реализовывать разноформатные проекты с применением эффективных решений.
+                </p>
+                <br>
+                <br>
+                <p>
+                  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Коллектив DepthsSEO предлагаем объединить аутентичность вашего бизнеса с 
+                  нашими знаниями и создать высококонкурентный сайт решающий исключительно ваши задачи.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <section class="partners">
+            <div class="container">
+              @@include('./SectionTitle/index.html', {
+                title: 'Нам доверяют',
+                textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+                underLineColor: '#828282',
+              })
+  
+              <div class="partners__logos-wrapper">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-1.png" alt="">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-2.png" alt="">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-3.png" alt="">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-4.png" alt="">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-5.png" alt="">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-6.png" alt="">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-7.png" alt="">
+                <img class="logo-item" src="../assets/partners-logos/p-logo-8.png" alt="">
+              </div>
+            </div>
+          </section>
+
+          <section class="lifebuoy">
+            @@include('../assets/logo-2.svg')
+
+            <h3>Нужна наша помощь? Звоните!</h3>
+          </section>
         </div>
-      </footer>
+      </main>
+
+      @@include('./Footer/index.html')
+      @@include('./Footer/Copyright/index.html')
     </div>
   </body>
   @@include('./utils/includes.html')

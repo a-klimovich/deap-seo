@@ -19,8 +19,7 @@ body {
   color: $dark;
 }
 
-h1,
-.h1 {
+h1 {
   font-weight: bold;
   font-size: 80px;
   line-height: 98px;
@@ -35,8 +34,7 @@ h1,
     line-height: 17px;
   }
 }
-h2,
-.h2 {
+h2 {
   font-size: 36px;
   line-height: 44px;
 
@@ -56,6 +54,7 @@ button {
   cursor: pointer;
   text-decoration: none;
   font-family: "Montserrat", sans-serif;
+  font-weight: 500;
 }
 
 .wrapper {

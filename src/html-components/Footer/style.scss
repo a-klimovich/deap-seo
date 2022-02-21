@@ -1,0 +1,141 @@
+@import "../../scss/variables";
+
+.footer {
+  padding: 65px 0 56px 0;
+  margin-bottom: 25px;
+  background-image: url("../../../assets//section-abut-bg-lg.jpg");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  color: $white;
+
+  a {
+    color: $white;
+  }
+
+  .d-flex {
+    display: flex;
+  }
+
+  .footer_list {
+    list-style: none;
+
+    h4 {
+      color: #2d9cdb;
+      font-size: 23px;
+      line-height: 28px;
+      margin-bottom: 29px;
+      font-weight: 500;
+    }
+
+    li {
+      margin-bottom: 29px;
+
+      a {
+        font-size: 18px;
+        line-height: 22px;
+      }
+    }
+  }
+
+  &__social {
+    margin-right: auto;
+
+    .logo {
+      margin-bottom: 26px;
+
+      svg {
+        width: 228px;
+        height: 48.01px;
+      }
+    }
+    .phone, .email {
+      display: flex;
+      align-items: center;
+      
+      svg {
+        margin-right: 1rem;
+      }
+    }
+    
+    .phone {
+      margin-bottom: 23px;
+    }
+    .email {
+      margin-bottom: 38px;
+    }
+  }
+
+  &__services {
+    margin-right: 10%;
+  }
+
+  &__last-news {
+    margin-right: 10%;
+  }
+
+  &__contacts-social {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 30px;
+
+    .social-item {
+      margin-right: 29px;
+
+      svg {
+        width: 39px;
+        height: 39px;
+      }
+
+      &_viber svg {
+        width: 41px;
+        height: 45px;
+      }
+    }
+  }
+
+  &__location {
+    display: flex;
+    align-items: center;
+    margin-bottom: 52px;
+
+    svg {
+      width: 28px;
+      height: 33px;
+      margin-right: 1rem;
+    }
+  }
+
+  &__connect-us {
+    h4 {
+      font-size: 23px;
+      line-height: 28px;
+      margin-bottom: 15px;
+    }
+
+    .connect-us__social {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+
+      .social-item {
+        margin-right: 36px;
+      }
+    }
+  }
+
+  .request-call-btn {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 10px);
+    width: 226px;
+    height: 54px;
+    color: $white;
+    font-size: 18px;
+    line-height: 22px;
+    background: linear-gradient(180deg, #17a6d6 0%, #4b33a1 100%);
+    border: 2px solid #00aff2;
+    box-sizing: border-box;
+    border-radius: 10px;
+  }
+}

@@ -1,0 +1,22 @@
+@import url(../../scss/_variables.scss);
+
+.section-title {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  line-height: 44px;
+
+  span {
+    margin-bottom: 17px;
+  }
+
+  hr {
+    height: 5px;
+    border: none;
+    width: 100%;
+    max-width: 270px;
+  }
+}

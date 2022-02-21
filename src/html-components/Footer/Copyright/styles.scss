@@ -1,0 +1,25 @@
+@import '../../../scss/variables';
+
+.copyright {
+  height: 198px;
+  background-color: $dark-blue;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  color: $white;
+
+  .logo {
+    margin-bottom: 23px;
+
+    svg {
+      width: 228px;
+      height: 48.01px;
+    }
+  }
+
+  p {
+    margin-bottom: 12px;
+    line-height: 22px;
+  }
+}

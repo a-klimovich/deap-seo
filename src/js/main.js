@@ -1,3 +1,14 @@
 (function(){
-  console.log(12)
+  const NavigatePanel = document.querySelector('nav.nav')
+  const sticky = NavigatePanel.offsetTop;
+  
+  window.onscroll = () => myFunction();
+  
+  function myFunction() {
+    if (window.pageYOffset > sticky) {
+      NavigatePanel.classList.add("sticky");
+    } else {
+      NavigatePanel.classList.remove("sticky");
+    }
+  }
 })()

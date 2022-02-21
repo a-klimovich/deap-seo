@@ -14,7 +14,7 @@ const buildDirectory = 'build/';
 
 const files = {
   html: srcDirectory + 'html/**/*.html',
-  scss: srcDirectory + 'scss/**/*.scss',
+  scss: srcDirectory + '*/**/*.scss',
   js: srcDirectory + 'js/**/*.js',
 }
 
@@ -71,11 +71,6 @@ function fonts() {
     .pipe( dest(buildDirectory + 'fonts/') )
 }
 
-function php() {
-  return src(srcDirectory + '*.php')
-    .pipe( dest(buildDirectory + '/') )
-}
-
 function htaccess() {
   return src(srcDirectory + '.htaccess')
     .pipe( dest(buildDirectory + '/') )
@@ -97,7 +92,7 @@ function connectTask() {
   })
 }
 
-const build = parallel(html, styles, scripts, images, assets, fonts, php, htaccess)
+const build = parallel(html, styles, scripts, images, assets, fonts, htaccess)
 
 exports.build = build;
 
