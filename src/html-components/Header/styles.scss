@@ -6,20 +6,32 @@
   &__bg-image {
     width: 100%;
     z-index: 0;
+    margin-top: -100px;
 
     img {
       max-height: 100vh;
       width: 100%;
       object-fit: cover;
     }
+
+    @media screen and (max-width: 1024px) {
+      margin-top: -84px;
+    }
+    @media screen and (max-width: 768px) {
+      margin-top: -35px;
+    }
   }
 
   &__content {
     position: absolute;
-    left: 13%;
+    left: calc((100vw - 1200px) / 2);
     bottom: 174px;
     max-width: 818px;
 
+    @media screen and (max-width: 1300px) {
+      left: 70px;
+      bottom: 10%;
+    }
 
     .title {
       color: #fff;
@@ -27,8 +39,64 @@
     }
 
     .subtitle {
+      font-family: 'Carisma';
+      font-size: 28px;
+      line-height: 32px;
       color: #C7A1EB;
       z-index: 1;
+    }
+
+    @media screen and (max-width: 1221px) {
+      .title {
+        font-size: 64px;
+        line-height: 64px;
+        margin-bottom: 15px;
+      }
+
+      .subtitle {
+        max-width: 540px;
+      }
+    }
+
+    @media screen and (max-width: 1024px) {
+      max-width: 371px;
+      left: calc((100vw - 728px) / 2);
+
+      .title {
+        font-size: 32px;
+        line-height: 39px;
+        margin-bottom: 10px;
+      }
+
+      .subtitle {
+        max-width: 338px;
+        font-size: 20px;
+        line-height: 23px;
+      }
+    }
+
+    @media screen and (max-width: 1023.99px) {
+      .title {
+        font-size: 32px;
+        line-height: 39px;
+      }
+    }
+  
+    @media screen and (max-width: 767.99px) {
+      .title {
+        font-size: 14px;
+        line-height: 17px;
+      }
+
+      .subtitle {
+        font-size: 8px;
+        line-height: 9px;
+      }
+    }
+
+    @media screen and (max-width: 750px) {
+      left: 10px;
+      max-width: 179px;
     }
   }
 }

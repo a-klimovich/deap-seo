@@ -6,15 +6,27 @@
   background-color: $dark-blue;
   height: 71px;
 
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
+
   .contacts {
     display: flex;
     align-items: center;
+    
+    @media screen and (max-width: 1024px) {
+      justify-content: space-between;
+    }
 
     &__social {
       display: flex;
       align-items: flex-start;
       justify-content: center;
       margin-right: auto;
+
+      @media screen and (max-width: 1024px) {
+        display: none;
+      }
 
       .social-item {
         display: inline-flex;
