@@ -19,4 +19,26 @@
     width: 100%;
     max-width: 270px;
   }
+
+  @media screen and (max-width: 1240px) {
+    font-size: 28px;
+    line-height: 34px;
+
+     span {
+      margin-bottom: 10px;
+    }
+  }
+  @media screen and (max-width: 768px) {
+    font-size: 16px;
+    line-height: 20px;
+
+     span {
+      margin-bottom: 7px;
+    }
+
+    hr {
+      width: 128px;
+      height: 3px;
+    }
+  }
 }

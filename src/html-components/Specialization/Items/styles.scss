@@ -34,9 +34,10 @@
     line-height: 29px;
     text-align: center;
     letter-spacing: -0.02em;
-
+    font-weight: 500;
     color: #17206f;
     margin-bottom: 31px;
+    padding: 0 15px;
   }
 
   &__text {
@@ -66,5 +67,43 @@
     /* Gray 2 */
 
     color: #4f4f4f;
+  }
+
+  @media screen and (max-width: 1240px) {
+    width: 331px;
+  }
+
+  @media screen and (max-width: 768px) {
+    width: 300px;
+    height: 310px;
+    padding: 12px 0 15px 0;
+
+    &__image {
+      margin-bottom: 26px;
+      
+      svg {
+        width: 106px;
+        height: 106px;
+      }
+    }
+
+    &__title {
+      font-size: 16px;
+      line-height: 20px;
+      margin-bottom: 14px;
+      padding: 0 40px;
+    }
+
+    &__text {
+      font-size: 14px;
+      line-height: 17px;
+      height: 75px;
+      padding: 0;
+    }
+
+    &__link {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
