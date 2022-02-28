@@ -24,7 +24,7 @@
 
   &__content {
     position: absolute;
-    left: calc((100vw - 1200px) / 2);
+    left: calc((100vw - 1500px) / 2);
     bottom: 174px;
     max-width: 818px;
 
@@ -81,8 +81,14 @@
         line-height: 39px;
       }
     }
-  
-    @media screen and (max-width: 767.99px) {
+
+    @media screen and (max-width: 750px) {
+      max-width: 360px;
+      left: 10px;
+      max-width: 179px;
+    }
+
+    @media screen and (max-width: 359.99px) {
       .title {
         font-size: 14px;
         line-height: 17px;
@@ -92,11 +98,6 @@
         font-size: 8px;
         line-height: 9px;
       }
-    }
-
-    @media screen and (max-width: 750px) {
-      left: 10px;
-      max-width: 179px;
     }
   }
 }

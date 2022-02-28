@@ -1,0 +1,57 @@
+@import './variables';
+
+.green-theam {
+  header {
+    .contacts-wrapper {
+      background: $dark-green;
+    }
+  
+    .nav {
+      &__menu a {
+        color: $dark-green;
+  
+        &:hover {
+          color: $green;
+        }
+
+        &:hover::after {
+          background-color: $dark-green;
+        }
+      }
+    }
+
+    .header__content {
+      .subtitle {
+        color: #95EDD0;
+      }
+    }
+
+    #paint0_linear_99_1254, 
+    #paint1_linear_99_1254 {
+      .theam-control--first-color {
+        stop-color: $green;
+      }
+      
+      .theam-control--second-color {
+        stop-color: $dark-green;
+      }
+    }
+  }
+
+  footer {
+    .footer_list h4 {
+      color: #6FCF97;
+    }
+
+    button.request-call-btn {
+      background: $gradient-green;
+      border-color:#6FCF97;
+    }
+  }
+
+  #logo-2 {
+    .theam-control--text {
+      fill: #6FCF97;
+    }
+  }
+}
