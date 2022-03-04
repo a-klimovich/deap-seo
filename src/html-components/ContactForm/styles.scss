@@ -1,0 +1,227 @@
+@import "../../scss/variables";
+
+.contacts-form {
+  display: flex;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 49px;
+  padding: 47px 43px;
+
+  @media screen and (max-width: 1024px) {
+    border-radius: 26px;
+    padding: 20px 19px;
+  }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: column;
+    border-radius: 10px;
+    padding: 13px 9px;
+  }
+
+  .form-section {
+    width: 52%;
+    margin: -5px;
+    padding: 5px;
+
+    @media screen and (max-width: 768px) {
+      margin: 0;
+      width: 100%;
+    }
+  }
+
+  .form-section:nth-child(1) {
+    padding-right: 35px;
+
+    @media screen and (max-width: 1024px) {
+      padding-right: 13.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  .form-section:nth-child(2) {
+    padding-left: 35px;
+
+    @media screen and (max-width: 1024px) {
+      padding-left: 13.5px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding: 0;
+    }
+  }
+
+  input,
+  textarea {
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: -0.02em;
+    color: $dark;
+    padding: 10px 35px;
+    border-color: transparent;
+    margin-bottom: 20px;
+
+    @media screen and (max-width: 1024px) {
+      padding: 5px 15px;
+      margin-bottom: 19px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 10px;
+      line-height: 12px;
+      padding: 5px 5px;
+      margin-bottom: 9px;
+    }
+  }
+
+  input::placeholder,
+  textarea::placeholder {
+    position: absolute;
+    font-style: italic;
+    left: 35px;
+    bottom: 15px;
+    text-align: left;
+
+    @media screen and (max-width: 768px) {
+      position: static;
+    }
+  }
+
+  input {
+    width: 100%;
+    background: #f2f2f2;
+    border-radius: 24px;
+    height: 99px;
+
+    @media screen and (max-width: 1024px) {
+      height: 72px;
+      border-radius: 12px;
+    }
+
+    @media screen and (max-width: 768px) {
+      border-radius: 5px;
+      height: 25px;
+    }
+  }
+
+  input[type="file"] {
+    display: none;
+  }
+
+  textarea {
+    border-radius: 24px;
+    width: 100%;
+    height: 100%;
+    max-height: 218px;
+    background: #f2f2f2;
+
+    @media screen and (max-width: 1024px) {
+      border-radius: 12px;
+      max-height: 160px;
+    }
+
+    @media screen and (max-width: 768px) {
+      height: 51px;
+    }
+  }
+
+  .name-mail-wrapper {
+    @media screen and (max-width: 768px) {
+      display: flex;
+      margin: 0 -5px;
+      margin-bottom: 9px;
+
+      input {
+        margin: 0 5px;
+      }
+    }
+  }
+
+  .custom-file-upload {
+    display: flex;
+    align-items: center;
+    color: $dark;
+    letter-spacing: -0.02em;
+
+    @media screen and (max-width: 1250px) {
+      align-items: flex-start;
+    }
+
+    @media screen and (max-width: 768px) {
+      align-items: center;
+    }
+
+    .addFileButton {
+      width: 72px;
+      height: 72px;
+      background: #bdbdbd;
+      border-radius: 8px;
+      font-size: 60px;
+      line-height: 73px;
+      text-align: center;
+      cursor: pointer;
+      margin-right: 19px;
+
+      @media screen and (max-width: 1250px) {
+        margin-right: 17px;
+        align-items: flex-start;
+      }
+
+      @media screen and (max-width: 768px) {
+        margin-right: 4px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 30px;
+        height: 30px;
+        font-size: 30px;
+        line-height: 37px;
+      }
+    }
+
+    p {
+      font-size: 18px;
+      line-height: 22px;
+
+      @media screen and (max-width: 768px) {
+        font-size: 9px;
+        line-height: 11px;
+        max-width: 80px;
+      }
+    }
+  }
+
+  .buttons-wrapper {
+    display: flex;
+    position: relative;
+  }
+
+  &__send-btn {
+    position: absolute;
+    bottom: -15px;
+    right: 0;
+    background: linear-gradient(180deg, #17a6d6 0%, #4b33a1 100%);
+    border: 2px solid #00aff2;
+    width: 226px;
+    height: 54px;
+    border-radius: 10px;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    color: $white;
+
+    @media screen and (max-width: 1250px) {
+      bottom: 0;
+      width: 162px;
+      height: 39px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 142px;
+      height: 30px;
+      font-size: 16px;
+      line-height: 20px;
+    }
+  }
+}

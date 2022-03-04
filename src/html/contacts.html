@@ -13,7 +13,54 @@
       })
 
       <main>
-        
+        <div class="container">
+          <section class="contacts">
+            @@include('./SectionTitle/index.html', {
+              title: 'Напишите команде DepthsSEO',
+              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+              underLineColor: '#828282',
+            })
+  
+            <p class="subtitle">Лучший способ преодолеть проблему - начать работать над ней!</p>
+
+            @@include('./ContactForm/index.html')
+
+            @@include('./SectionTitle/index.html', {
+              title: 'Команда DepthsSEO',
+              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+              underLineColor: '#828282',
+            })
+
+            <div class="contacts__team">
+              <div class="team-persone-item">
+                <img class="team-persone-item" src="../assets/image/team-persone-image.jpg" alt="">
+
+                <p class="team-persone-item__name">Святослав</p>
+                <p class="team-persone-item__position">Иллюстратор</p>
+                <ul class="skills">
+                  <li>Adobe Photoshop,</li>
+                  <li>Adobe Illustration,</li>
+                  <li>Adobe Photoshop,</li>
+                  <li>Adobe Illustration,</li>
+                </ul>
+              </div>
+            </div>
+
+            @@include('./SectionTitle/index.html', {
+              title: 'Адрес',
+              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+              underLineColor: '#828282',
+            })
+
+            <div class="location">
+              <p class="subtitle">Г. Минск ул. Хххххххххххххххх. ИП ххххххх, УНП хххххххх</p>
+            
+              <div id="map">
+                <!-- MAP -->
+              </div>
+            </div>
+          </section>
+        </div>
       </main>
 
       @@include('./Footer/index.html')
