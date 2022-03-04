@@ -129,10 +129,13 @@
 
     .article-data-science__wrapper {
       img {
-        width: 100%;
-        height: 100%;
-        max-width: 484px;
-        max-height: 348px;
+        margin-right: auto;
+        width: 340px;
+        height: 348px;
+      }
+
+      .article-data-science__content {
+        max-width: 1052px;
       }
 
       @media screen and (max-width: 1250px) {
@@ -140,37 +143,68 @@
 
         img {
           margin-left: auto;
+          margin-right: 0;
           margin-bottom: -50px;
+          max-width: 484px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        img {
+          margin-right: auto;
+          max-width: 227px;
+          max-height: 220px;
+          margin-bottom: 34px;
         }
       }
     }
+
     .article-outsourcing__wrapper {
       img {
         width: 100%;
         height: 100%;
-        max-width: 504px;
+        width: 350px;
         max-height: 363px;
       }
 
-      @media screen and (max-width: 1250px) {
-        // flex-wrap: wrap;
+      .article-data-science__content {
+        max-width: 1052px;
+        margin-right: auto;
 
+        .title {
+          -webkit-background-clip: text;
+          -webkit-text-fill-color: transparent;
+          background-image: $gradient-green;
+        }
+      }
+
+      @media screen and (max-width: 1250px) {
         img {
-          max-width: 350px;
-          max-height: 380px;
+          width: 350px;
+          height: 380px;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+        flex-direction: column;
+        img {
+          width: 226px;
+          height: 245px;
+          margin-bottom: 31px;
         }
 
-        .text {
-          text-align: left;
+        .article-data-science__content {
+          .title {
+            margin-bottom: 16px;
+          }
         }
       }
     }
+
     .article-crm__wrapper {
       img {
-        width: 100%;
-        height: 100%;
-        max-width: 584px;
-        max-height: 421px;
+        width: 584px;
+        height: 421px;
       }
 
       .text {
@@ -179,13 +213,29 @@
 
       @media screen and (max-width: 1250px) {
         flex-wrap: wrap;
+        padding-top: 0;
 
         img {
+          width: 584px;
+          height: 390px;
           margin: 0 auto;
         }
 
         .title {
           text-align: center;
+        }
+      }
+
+      @media screen and (max-width: 768px) {
+
+        img {
+          width: 326px;
+          height: 217px;
+          margin-bottom: 16px;
+        }
+
+        .title {
+          margin-bottom: 17px;
         }
       }
 
@@ -215,14 +265,26 @@
       .title {
         font-size: 36px;
         line-height: 44px;
-        margin-bottom: 30px;
+        margin-bottom: 27px;
+
+        @media screen and (max-width: 768px) {
+          font-size: 22px;
+          line-height: 27px;
+          text-align: center;
+          margin-bottom: 22px;
+        }
       }
 
       .text {
-        font-family: "Carisma", sans-serif;
         font-size: 28px;
         line-height: 32px;
+        font-family: "Carisma", sans-serif;
         text-align: justify;
+
+        @media screen and (max-width: 768px) {
+          font-size: 18px;
+          line-height: 20px;
+        }
       }
     }
   }

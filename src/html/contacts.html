@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./utils/head.html')
+  <body>
+    <div class="wrapper">
+      @@include('./Header/index.html', {
+        title: 'Контакты',
+        subtitle: 'Свяжитесь с нами',
+        imgSizeSmPath: './assets/header-bg_sm.jpg',
+        imgSizeMdPath: './assets/header-bg_md.jpg',
+        imgSizeLgPath: './assets/header-bg_lg.jpg',
+        imgDefault: './assets/header-bg_lg.jpg'
+      })
+
+      <main>
+        
+      </main>
+
+      @@include('./Footer/index.html')
+      @@include('./Footer/Copyright/index.html')
+    </div>
+  </body>
+  @@include('./utils/includes.html')
+</html>
