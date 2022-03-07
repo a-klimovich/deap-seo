@@ -32,18 +32,49 @@
             })
 
             <div class="contacts__team">
-              <div class="team-persone-item">
-                <img class="team-persone-item" src="../assets/image/team-persone-image.jpg" alt="">
-
-                <p class="team-persone-item__name">Святослав</p>
-                <p class="team-persone-item__position">Иллюстратор</p>
-                <ul class="skills">
-                  <li>Adobe Photoshop,</li>
-                  <li>Adobe Illustration,</li>
-                  <li>Adobe Photoshop,</li>
-                  <li>Adobe Illustration,</li>
-                </ul>
-              </div>
+              @@include('./TeammateCard/index.html', {
+                imageSrc: '../assets/image/team-persone-image.jpg',
+                name: 'Святослав',
+                position: 'Иллюстратор',
+                skills: '<li>Adobe Photoshop</li><li>Adobe Illustration</li><li>Adobe Illustration</li><li>Adobe Photoshop</li>'
+              })
+              @@include('./TeammateCard/index.html', {
+                imageSrc: '../assets/image/team-persone-image.jpg',
+                name: 'Artur',
+                position: 'Front-End',
+                skills: '<li>JavaScript</li><li>HTML</li><li>CSS</li><li>Figma</li>'
+              })
+              @@include('./TeammateCard/index.html', {
+                imageSrc: '../assets/image/team-persone-image.jpg',
+                name: 'Yura',
+                position: 'Advertising',
+                skills: '<li>Google</li><li>Analitics</li><li>SEO</li><li>Figma</li>'
+              })
+              @@include('./TeammateCard/index.html', {
+                imageSrc: '../assets/image/team-persone-image.jpg',
+                name: 'Кот котейкович',
+                position: 'Животное',
+                skills: '<li>Мяу</li><li>Мур</li><li>Шшшш</li><li>Кусь</li><li>Пьёт молоко</li>'
+              })
+              @@include('./TeammateCard/index.html', {
+                imageSrc: '../assets/image/team-persone-image.jpg',
+                name: 'Святослав',
+                position: 'Иллюстратор',
+                skills: '<li>Adobe Photoshop</li><li>Adobe Illustration</li><li>Adobe Illustration</li><li>Adobe Photoshop</li>'
+              })
+              @@include('./TeammateCard/index.html', {
+                imageSrc: '../assets/image/team-persone-image.jpg',
+                name: 'Artur',
+                position: 'Front-End',
+                skills: '<li>JavaScript</li><li>HTML</li><li>CSS</li><li>Figma</li>'
+              })
+              @@include('./TeammateCard/index.html', {
+                imageSrc: '../assets/image/team-persone-image.jpg',
+                name: 'Yura',
+                position: 'Advertising',
+                skills: '<li>Google</li><li>Analitics</li><li>SEO</li><li>Figma</li>'
+              })
+             
             </div>
 
             @@include('./SectionTitle/index.html', {
@@ -56,10 +87,246 @@
               <p class="subtitle">Г. Минск ул. Хххххххххххххххх. ИП ххххххх, УНП хххххххх</p>
             
               <div id="map">
-                <!-- MAP -->
+                <iframe src="https://www.google.com/maps/embed?pb=!1m10!1m8!1m3!1d19549.21011024393!2d20.9891824!3d52.2315534!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sen!2spl!4v1646488415738!5m2!1sen!2spl" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
               </div>
             </div>
           </section>
+          <section class="promotion">
+            @@include('./SectionTitle/index.html', {
+              title: 'В чем мы сильны?',
+              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+              underLineColor: '#828282',
+            })
+
+            <div class="promotion__subtitle">
+              <p>Команда DepthsSeo готова провести комплекс SEO работ по продвижению сайта.</p>
+              <br>
+              <p>Вы хотите улучшить свой ресурс и лидировать в своем сегменте рынка?
+                Позвоните нам или заполните форму. Мы проведем бесплатный SEO аудит Вашего сайта и предложим комплекс решений исходя
+                из задач Вашего бизнеса.
+              </p>
+              <br>
+              <p>
+                p.s. Мы не знаем, как вам заработать миллионы ничего не делая. У нас нет волшебных пилюль на все случаи жизни, мы не
+                используем черные методы sео продвижения и нам стыдно за горе "SEO-специалистов" культивирующих такого рода ценности.
+                Только ежедневный труд и работа над собой и своим бизнесом приносит результат!
+              </p>
+            </div>
+
+            <div class="skills-tree">
+              <div class="skill-item-wraper skills-item__left">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/search.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__right">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/target.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__left">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/voice.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__right">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/data.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__left">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/brain.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__right">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/fingerprint.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__left">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/eay.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__right">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/list.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__left">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/chat.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__right">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/world.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__left">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/tag.svg')
+                </div>
+              </div>
+
+              <div class="skill-item-wraper skills-item__right">
+                <div class="skills-tree__item">
+                  <div class="title">
+                    Search Engine Optimization
+                  </div>
+                  <div class="text">
+                    Комплекс SEO работ. <br>
+                    Хотите на первую страницу в поисковой выдаче? 
+                  </div>
+                </div>
+
+                <div class="icone">
+                  @@include('../assets/skill-items-icons/people.svg')
+                </div>
+              </div>
+            </div>
+
+            <div class="scuba-diver-wrap">
+              <img src="../assets/diver.png" alt="">
+            </div>
+          </section>
+        </div>
+
+        <div class="slider-wraper">
+          @@include('./SectionTitle/index.html', {
+            title: 'В чем мы сильны?',
+            textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+            underLineColor: '#828282',
+          })
+          
+          @@include('../assets/bg-slider-header.svg')
+
+          <div id="slider">
+            <div class="slide">
+              text
+            </div>
+          </div>
         </div>
       </main>
 

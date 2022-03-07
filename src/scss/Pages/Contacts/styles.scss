@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .contacts {
   .subtitle {
@@ -9,5 +9,27 @@
     line-height: 27px;
     letter-spacing: -0.02em;
     color: $dark;
+  }
+
+  .contacts__team {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 40px;
+
+    @media screen and (max-width: 1250px) {
+      grid-template-columns: repeat(3, 1fr);
+      gap: 30px;
+    }
+    @media screen and (max-width: 1024px) {
+      grid-template-columns: repeat(2, 1fr);
+      gap: 26px;
+    }
+    @media screen and (max-width: 768px) {
+      gap: 10px;
+    }
+  }
+
+  .location {
+    margin-bottom: 63px;
   }
 }

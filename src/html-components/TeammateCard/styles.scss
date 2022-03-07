@@ -1,0 +1,69 @@
+@import "../../scss/variables";
+
+.teammate-card {
+  background: #ffffff;
+  box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.12);
+  border-radius: 12px;
+  padding: 20px;
+  padding-bottom: 35px;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: -0.02em;
+  text-align: center;
+  width: 100%;
+  max-width: 362px;
+  height: 535px;
+  
+
+  &__photo {
+    width: 100%;
+    max-width: 321px;
+    height: 273px;
+    overflow: hidden;
+    margin-right: auto;
+    margin-left: auto;
+    margin-bottom: 14px;
+
+    img {
+      object-fit: cover;
+      width: 100%;
+      height: 100%;
+    }
+  }
+
+  &__name {
+    margin-bottom: 7px;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -0.02em;
+    color: #12397c;
+    font-weight: 500;
+  }
+
+  &__position {
+    margin-bottom: 7px;
+  }
+
+  &__skills {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding: 0;
+    list-style: none;
+    height: 100%;
+    max-height: 112px;
+    overflow: hidden;
+
+    li {
+      text-align: center;
+    }
+  }
+
+  hr {
+    height: 2px;
+    background: #e0e0e0;
+    border: none;
+    width: 100%;
+    margin-bottom: 7px;
+  }
+}

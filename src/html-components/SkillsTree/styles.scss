@@ -1,0 +1,147 @@
+@import '../../scss/variables';
+
+.skills-tree {
+  display: flex;
+  flex-direction: column;
+  padding-top: 160px;
+  margin-bottom: -185px;
+
+  .skill-item-wraper {
+    position: relative;
+    display: flex;
+    width: calc(50% + 59px); //56px - it's 50% width icone block
+    align-items: flex-start;
+    margin-top: -140px;
+  }
+
+  .skill-item-wraper:nth-last-child(1) {
+    &::after {
+      display: none;
+    }
+  }
+
+  .skills-item__left {
+    text-align: right;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 50%;
+      width: 4px;
+      top: 59px;
+      background: #BDBDBD;
+      right: 59px;
+      z-index: -1;
+    }
+
+    .title{
+      padding-right: 29px;
+    }
+
+    .text {
+      padding-right: 29px;
+      padding-left: 10px;
+    }
+
+    .icone {
+      &::after {
+        right: 0%;
+      }
+    }
+  }
+  
+  .skills-item__right {
+    align-self: flex-end;
+    flex-direction: row-reverse;
+    text-align: left;
+
+    &::after {
+      content: "";
+      position: absolute;
+      height: 30%;
+      width: 4px;
+      background: #BDBDBD;
+      left: 59px;
+      top: 59px;
+      z-index: -1;
+    }
+
+    .skills-tree__item {
+      margin-left: auto;
+      margin-right: 0;
+    }
+
+    .title{
+      padding-left: 29px;
+    }
+
+    .text {
+      padding-left: 29px;
+      padding-right: 10px;
+    }
+
+    .icone {
+      &::after {
+        left: 0%;
+      }
+    }
+  }
+
+  &__item {
+    display: flex;
+    flex-direction: column;
+    box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.14);
+    border-radius: 17px;
+    max-width: 622px;
+    margin-bottom: 39px;
+    position: relative;
+    margin-right: auto;
+
+    .title {
+      background: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+      border-radius: 17px 17px 0px 0px;
+      font-weight: 500;
+      font-size: 24px;
+      line-height: 29px;
+      letter-spacing: -0.02em;
+      color: $white;
+      padding: 25px;
+      z-index: 1;
+    }
+
+    .text {
+      height: 115px;
+      margin-top: 41px;
+      margin-bottom: 9.2px;
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      letter-spacing: -0.02em;
+    }
+  }
+
+  .icone {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 118px;
+    height: 118px;
+    border-radius: 50%;
+    background: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+    top: -15px;
+    position: relative;
+
+    img, svg {
+      position: absolute;
+    }
+    
+    &::after {
+      content: '';
+      position: absolute;
+      width: 300%;
+      height: 4px;
+      background: #BDBDBD;
+      z-index: -1;
+    }
+  }
+}

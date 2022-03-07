@@ -1,0 +1,35 @@
+@import '../../variables';
+
+.promotion {
+  &__subtitle {
+    text-align: center;
+    margin-top: 27px;
+    margin-bottom: 60px;
+  }
+  .scuba-diver-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.slider-wraper {
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  height: 420px;
+  padding-top: 65px;
+
+  svg {
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    right: 0%;
+  }
+
+  #slider {
+    margin-top: 50px;
+    height: 200px;
+    display: flex;
+  }
+}
