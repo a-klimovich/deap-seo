@@ -13,7 +13,7 @@
   }
 }
 
-.slider-wraper {
+.instruments-wraper {
   display: flex;
   flex-direction: column;
   position: relative;
@@ -25,11 +25,5 @@
     top: 0%;
     left: 0%;
     right: 0%;
-  }
-
-  #slider {
-    margin-top: 50px;
-    height: 200px;
-    display: flex;
   }
 }

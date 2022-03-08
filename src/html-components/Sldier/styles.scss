@@ -1,0 +1,51 @@
+.slick-slider {
+  margin-top: 20px;
+
+  .slick-list {
+    margin-bottom: 30px;
+  }
+
+  .slider-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 20px;
+    padding: 0 20px;
+    height: 175px;
+
+
+    img {
+      width: 100%;
+      max-width: fit-content;
+      max-height: 120px;
+    }
+  }
+
+  .slick-dots {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    transition: all 0.3s;
+
+    li button {
+      font-size: 0;
+      border: none;
+      border-radius: 50%;
+      background-color: #C4C4C4;
+      width: 16px;
+      height: 16px;
+      margin: 0 6px;
+      
+
+      &:hover {
+        background-color: #0C2963;
+      }
+    }
+
+    li.slick-active {
+      button {
+        background-color: #0C2963;
+      }
+    }
+  }
+}
