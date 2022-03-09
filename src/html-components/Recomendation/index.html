@@ -1,0 +1,49 @@
+<section class="recomendation">
+  <div class="recomendation__header">
+    <div class="social">
+      <a href="#" class="social-item">
+        @@include('../assets/social/instagram.svg')
+      </a>
+      <a href="#" class="social-item">
+        @@include('../assets/social/facebook.svg')
+      </a>
+      <a href="#" class="social-item">
+        @@include('../assets/social/vk.svg')
+      </a>
+      <a href="#" class="social-item">
+        @@include('../assets/social/ok.svg')
+      </a>
+      <a href="#" class="social-item social-item_viber">
+        @@include('../assets/social/twitter.svg')
+      </a>
+    </div>
+
+    <div class="svg-wrapper">
+      @@include('../assets/vector.svg')
+    </div>
+
+    <div class="btn-wrapper">
+      <button class="btn-show-more-blog-items">
+        Вернуться к статьям блога
+      </button>
+    </div>
+  </div>
+
+  <div class="recomendation__items-wrapper">
+    @@include('./BlogCard/index.html', {
+      'imgUrl': './assets/image/context.jpg',
+      'title': 'Типы сайтов',
+      'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+    })
+    @@include('./BlogCard/index.html', {
+      'imgUrl': './assets/image/context.jpg',
+      'title': 'Типы сайтов',
+      'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+    })
+    @@include('./BlogCard/index.html', {
+      'imgUrl': './assets/image/context.jpg',
+      'title': 'Типы сайтов',
+      'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+    })
+  </div>
+</section>
