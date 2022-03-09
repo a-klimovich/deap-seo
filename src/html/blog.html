@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./utils/head.html')
+  <body>
+    <div class="wrapper">
+      @@include('./Header/index.html', {
+        title: 'SEO продвижение Вашего сайта',
+        subtitle: 'Приумножьте свой бизнес используя опыт команды DepthsSEO!',
+        imgSizeSmPath: './assets/header-bg_sm.jpg',
+        imgSizeMdPath: './assets/header-bg_md.jpg',
+        imgSizeLgPath: './assets/header-bg_lg.jpg',
+        imgDefault: './assets/header-bg_lg.jpg'
+      })
+
+      <main>
+        <div class="container">
+          @@include('./SectionTitle/index.html', {
+            title: 'Наша специализация',
+            textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+            underLineColor: '#828282',
+          })
+
+          <section class="blog">
+            @@include('./SectionTitle/index.html', {
+              title: 'Свежие статьи по SEO',
+              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
+              underLineColor: '#828282',
+            })
+  
+            <p class="blog__subtitle">
+              Интернет-маркетинг динамично развивается. Приемы и инструменты, которые вчера были эталонным решением сегодня могут не
+              давать прежний результат. В нашем блоге мы расскажем о лучших практиках и актуальных решениях в интернет-маркетинге.
+              <br><br>
+              Эффективно продвигайте и развивайте свои сайты и оставайтесь лидером!
+            </p>
+
+            <div class="blog-item__wrapper">
+              @@include('./BlogCard/index.html', {
+                'imgUrl': './assets/image/context.jpg',
+                'title': 'Типы сайтов',
+                'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+              })
+              @@include('./BlogCard/index.html', {
+                'imgUrl': './assets/image/context.jpg',
+                'title': 'Типы сайтов',
+                'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+              })
+              @@include('./BlogCard/index.html', {
+                'imgUrl': './assets/image/context.jpg',
+                'title': 'Типы сайтов',
+                'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+              })
+              @@include('./BlogCard/index.html', {
+                'imgUrl': './assets/image/context.jpg',
+                'title': 'Типы сайтов',
+                'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+              })
+              @@include('./BlogCard/index.html', {
+                'imgUrl': './assets/image/context.jpg',
+                'title': 'Типы сайтов',
+                'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+              })
+              @@include('./BlogCard/index.html', {
+                'imgUrl': './assets/image/context.jpg',
+                'title': 'Типы сайтов',
+                'text': 'Работа Seo-специалиста с типографом. Актуальность и возможности....',
+              })
+            </div>
+
+            <button class="btn-show-more-blog-items">
+              Показать еще
+            </button>
+          </section>
+        </div>
+      </main>
+
+      @@include('./Footer/index.html')
+      @@include('./Footer/Copyright/index.html')
+    </div>
+  </body>
+  @@include('./utils/includes.html')
+</html>
