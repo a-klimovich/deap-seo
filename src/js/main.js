@@ -1,7 +1,7 @@
 (function(){
   const NavigatePanel = document.querySelector('nav.nav')
   const sticky = NavigatePanel.offsetTop;
-  const hamburgerBtn = document.querySelector("nav .nav__hamburger-btn")
+  const HamburgerBtn = document.querySelector("nav .nav__hamburger-btn")
   
   window.onscroll = () => myFunction();
   
@@ -13,7 +13,7 @@
     }
   }
 
-  hamburgerBtn.addEventListener('click', () => {
-    hamburgerBtn.classList.toggle('active')
+  HamburgerBtn.addEventListener('click', () => {
+    HamburgerBtn.classList.toggle('active')
   })
 })()

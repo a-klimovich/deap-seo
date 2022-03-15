@@ -1,6 +1,15 @@
 .breadcrumbs {
   display: flex;
   list-style: none;
+  margin: 31px 0;
+
+  @media screen and (max-width: 1024px) {
+    margin: 20px 0 30px 0;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin: 17px 0;
+  }
 
   &__link {
     margin-right: 15px;
@@ -10,11 +19,20 @@
       font-size: 22px;
       line-height: 27px;
       letter-spacing: -0.02em;
-      color: #4F4F4F;
+      color: #4f4f4f;
+
+      @media screen and (max-width: 1024px) {
+        font-size: 20px;
+        line-height: 24px;
+      }
+      @media screen and (max-width: 768px) {
+        font-size: 12px;
+        line-height: 15px;
+      }
     }
 
     a:hover {
-      color: #015FBF;
+      color: #015fbf;
     }
   }
 
@@ -23,8 +41,18 @@
     padding-right: 30px;
     margin-right: 10px;
 
+    @media screen and (max-width: 1024px) {
+      padding-right: 24px;
+      margin-right: 8px;
+    }
+
+    @media screen and (max-width: 768px) {
+      padding-right: 16px;
+      margin-right: 5px;
+    }
+
     &:after {
-      content: '';
+      content: "";
       position: absolute;
       bottom: 0;
       right: 0;
@@ -34,12 +62,24 @@
       border-bottom: 2px solid #828282;
       border-right: 2px solid #828282;
       transform: rotate(-45deg) translateY(-100%);
+
+      @media screen and (max-width: 1024px) {
+        width: 9px;
+        height: 9px;
+      }
+
+      @media screen and (max-width: 768px) {
+        width: 6px;
+        height: 6px;
+        border-bottom-width: 1px;
+        border-right-width: 1px;
+      }
     }
   }
 
   &__link:nth-last-child(1) {
     a {
-      color: #015FBF;
+      color: #015fbf;
       cursor: default;
     }
   }
