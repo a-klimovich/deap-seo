@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="ru">
+  @@include('./utils/head.html')
+  <body>
+    <div class="wrapper">
+      <header class="header hedaer_error">
+        @@include('./Header/Contacts/index.html')
+        <div class="container">
+          @@include('./Header/Nav/index.html')
+      
+          <div class="header__content">
+            <a class="link-get-back" href="#">Вернуться на главную</a>
+            <h1 class="title">Упсс... Что-то пошло не так...</h1>
+          </div>
+        </div>
+        <div class="header__bg-image">
+          <picture>
+            <source media="(min-width: 1024px)"
+                    srcset="./assets/error-404-bg-lg.jpg">
+            <source media="(min-width: 440px)"
+                    srcset="./assets/error-404-bg-md.jpg">
+            <source srcset="./assets/error-404-bg-sm.jpg">
+            <img src="./assets/error-404-bg-lg.jpg" alt=""/>
+          </picture>
+        </div>
+      </header>
+
+      <main>
+        <!-- ERROR -->
+      </main>
+
+      @@include('./Footer/index.html')
+      @@include('./Footer/Copyright/index.html')
+    </div>
+  </body>
+  @@include('./utils/includes.html')
+</html>
