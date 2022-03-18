@@ -111,11 +111,55 @@
       justify-content: center;
       align-items: center;
       height: 668px;
+      position: relative;
+      background-image: url('../../assets/video/gb.jpg');
+      background-repeat: no-repeat;
+      background-size: cover;
+      cursor: pointer;
 
       video {
-        object-fit: contain;
         height: 100%;
         width: 100%;
+      }
+
+      .btn-video {
+        visibility: visible;
+        border: none;
+        border-radius: 50%;
+        background: #fff;
+        width: 145px;
+        height: 145px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding-left: 10px;
+        position: absolute;
+
+        &.hidden {
+          visibility: hidden;
+        }
+
+        @media screen and (max-width: 1024px) {
+          width: 84px;
+          height: 84px;
+          padding-left: 7px;
+
+          svg {
+            width: 32px;
+            height: 37px;
+          }
+        }
+  
+        @media screen and (max-width: 768px) {
+          width: 36px;
+          height: 36px;
+          padding-left: 3px;
+
+          svg {
+            width: 13.5px;
+            height: 16px;
+          }
+        }
       }
 
       @media screen and (max-width: 1024px) {

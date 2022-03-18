@@ -10,7 +10,7 @@
     display: none;
   }
 
-  .contacts {
+  &__contacts {
     display: flex;
     align-items: center;
     
@@ -18,7 +18,7 @@
       justify-content: space-between;
     }
 
-    &__social {
+    .social {
       display: flex;
       align-items: flex-start;
       justify-content: center;
@@ -34,7 +34,7 @@
       }
     }
 
-    &__contact {
+    .contact {
       display: flex;
       align-items: center;
       justify-content: center;
@@ -58,7 +58,7 @@
       }
     }
 
-    &__lang {
+    .lang {
       display: flex;
       align-items: center;
       justify-content: center;
