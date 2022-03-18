@@ -8,7 +8,7 @@
   }
 
   .service-prising {
-    background-image: url("../../../assets/treangle-bg.svg");
+    background-image: url('./../assets/treangle-bg.svg');
     background-repeat: no-repeat;
     background-size: cover;
     background-position-x: center;
@@ -291,7 +291,7 @@
 
   .article-data-science,
   .article-crm {
-    background-image: url("../../../assets/data-science-bg_lg.jpg");
+    background-image: url("./../assets/data-science-bg_lg.jpg");
     background-repeat: no-repeat;
     background-size: 100% 100%;
     color: $white;
@@ -301,10 +301,10 @@
     }
 
     @media screen and (max-width: 1250px) {
-      background-image: url("../../../assets/data-science-bg_md.jpg");
+      background-image: url("./../assets/data-science-bg_md.jpg");
     }
     @media screen and (max-width: 768px) {
-      background-image: url("../../../assets/data-science-bg_sm.jpg");
+      background-image: url("./../assets/data-science-bg_sm.jpg");
     }
   }
 
