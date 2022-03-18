@@ -1,4 +1,4 @@
-@import '../../scss/variables';
+@import "../../scss/variables";
 
 .skills-tree {
   display: flex;
@@ -6,12 +6,51 @@
   padding-top: 160px;
   margin-bottom: -185px;
 
+  @media (min-width: 1220px) and (max-width: 1440px) {
+    padding-left: 20%;
+    padding-right: 20%;
+    margin-bottom: -125px;
+  }
+
+  @media (min-width: 1124px) and (max-width: 1220px) {
+    padding-left: 15%;
+    padding-right: 15%;
+    margin-bottom: -105px;
+  }
+
+  @media (min-width: 1024px) and (max-width: 1124px) {
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-bottom: -100px;
+  }
+
+  @media screen and (max-width: 1024px) {
+    margin-bottom: -90px;
+  }
+
+  @media screen and (max-width: 768px) {
+    margin-top: 0;
+    padding-top: 0;
+    margin-bottom: 26px;
+    margin-bottom: 0px;
+  }
+
   .skill-item-wraper {
     position: relative;
     display: flex;
     width: calc(50% + 59px); //56px - it's 50% width icone block
     align-items: flex-start;
     margin-top: -140px;
+
+    @media screen and (max-width: 1440px) {
+      margin-top: -100px;
+      width: calc(50% + (55px / 2)); //56px - it's 50% width icone block
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      margin-top: 0;
+    }
   }
 
   .skill-item-wraper:nth-last-child(1) {
@@ -23,24 +62,45 @@
   .skills-item__left {
     text-align: right;
 
+    @media screen and (max-width: 768px) {
+      text-align: center;
+    }
+
     &::after {
       content: "";
       position: absolute;
       height: 50%;
       width: 4px;
       top: 59px;
-      background: #BDBDBD;
-      right: 59px;
+      right: 58px;
+      background: #bdbdbd;
       z-index: -1;
+
+      @media screen and (max-width: 1440px) {
+        right: 25px;
+        top: 25px;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
-    .title{
+    .title {
       padding-right: 29px;
+
+      @media screen and (max-width: 1440px) {
+        padding-right: 8px;
+      }
     }
 
     .text {
       padding-right: 29px;
       padding-left: 10px;
+
+      @media screen and (max-width: 1440px) {
+        padding: 0 8px;
+      }
     }
 
     .icone {
@@ -49,21 +109,36 @@
       }
     }
   }
-  
+
   .skills-item__right {
     align-self: flex-end;
     flex-direction: row-reverse;
     text-align: left;
+
+    @media screen and (max-width: 768px) {
+      align-self: flex-start;
+      flex-direction: row;
+      text-align: center;
+    }
 
     &::after {
       content: "";
       position: absolute;
       height: 30%;
       width: 4px;
-      background: #BDBDBD;
-      left: 59px;
+      background: #bdbdbd;
+      left: 58px;
       top: 59px;
       z-index: -1;
+
+      @media screen and (max-width: 1440px) {
+        left: 25px;
+        top: 25px;
+      }
+
+      @media screen and (max-width: 768px) {
+        display: none;
+      }
     }
 
     .skills-tree__item {
@@ -71,13 +146,25 @@
       margin-right: 0;
     }
 
-    .title{
+    .title {
       padding-left: 29px;
+
+      @media screen and (max-width: 1440px) {
+        padding-left: 8px;
+      }
+
+      @media screen and (max-width: 440px) {
+        padding-left: 65px;
+      }
     }
 
     .text {
       padding-left: 29px;
       padding-right: 10px;
+
+      @media screen and (max-width: 1440px) {
+        padding: 0 8px;
+      }
     }
 
     .icone {
@@ -97,8 +184,18 @@
     position: relative;
     margin-right: auto;
 
+    @media screen and (max-width: 1440px) {
+      max-width: 304px;
+    }
+
+    @media screen and (max-width: 768px) {
+      width: 100%;
+      max-width: 100%;
+      margin-right: 0;
+    }
+
     .title {
-      background: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+      background: linear-gradient(180deg, #17a6d6 0%, #4b33a1 100%);
       border-radius: 17px 17px 0px 0px;
       font-weight: 500;
       font-size: 24px;
@@ -107,6 +204,33 @@
       color: $white;
       padding: 25px;
       z-index: 1;
+      white-space: nowrap;
+      position: relative;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 20px;
+        padding: 8px;
+      }
+
+      @media screen and (max-width: 768px) {
+        font-size: 16px;
+        padding: 6px;
+
+        &::before {
+          content: "";
+          position: absolute;
+          bottom: 0px;
+          left: 0;
+          width: 27px;
+          height: 35px;
+          background: #fff;
+          z-index: 0;
+        }
+      }
+
+      @media screen and (max-width: 440px) {
+        padding-left: 65px;
+      }
     }
 
     .text {
@@ -117,6 +241,14 @@
       font-size: 22px;
       line-height: 27px;
       letter-spacing: -0.02em;
+
+      @media screen and (max-width: 1440px) {
+        font-size: 16px;
+        line-height: 20px;
+        margin-top: 4px;
+        margin-bottom: 9px;
+        height: 83px;
+      }
     }
   }
 
@@ -127,21 +259,43 @@
     width: 118px;
     height: 118px;
     border-radius: 50%;
-    background: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+    background: linear-gradient(180deg, #17a6d6 0%, #4b33a1 100%);
     top: -15px;
     position: relative;
 
-    img, svg {
+    img,
+    svg {
       position: absolute;
     }
-    
+
     &::after {
-      content: '';
+      content: "";
       position: absolute;
       width: 300%;
       height: 4px;
-      background: #BDBDBD;
+      background: #bdbdbd;
       z-index: -1;
+    }
+
+    @media screen and (max-width: 1440px) {
+      width: 55px;
+      height: 55px;
+      top: 0;
+
+      svg {
+        width: 50%;
+      }
+    }
+
+    @media screen and (max-width: 768px) {
+      position: absolute;
+      transform: translateY(-30%);
+      top: 2px;
+      z-index: 1;
+
+      &::after {
+        display: none;
+      }
     }
   }
 }

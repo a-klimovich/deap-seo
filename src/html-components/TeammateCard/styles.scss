@@ -13,7 +13,6 @@
   width: 100%;
   max-width: 362px;
   height: 535px;
-  
 
   &__photo {
     width: 100%;
@@ -65,5 +64,38 @@
     border: none;
     width: 100%;
     margin-bottom: 7px;
+  }
+
+  @media screen and (max-width: 768px) {
+    border-radius: 5px;
+    padding: 7px 8px;
+    font-size: 12px;
+    line-height: 15px;
+    height: 285px;
+
+    &__photo {
+      height: 147px;
+      margin-bottom: 2px;
+    }
+
+    &__name {
+      font-size: 18px;
+      line-height: 22px;
+      margin-bottom: 3px;
+    }
+
+    &__position {
+      font-size: 12px;
+      line-height: 15px;
+      margin-bottom: 3px;
+    }
+
+    &__skills {
+      max-height: 63px;
+    }
+
+    hr {
+      margin-bottom: 2px;
+    }
   }
 }

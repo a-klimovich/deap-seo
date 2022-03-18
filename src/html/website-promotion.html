@@ -4,8 +4,8 @@
   <body>
     <div class="wrapper">
       @@include('./Header/index.html', {
-        title: 'SEO продвижение Вашего сайта',
-        subtitle: 'Приумножьте свой бизнес используя опыт команды DepthsSEO!',
+        title: 'Продвижение сайта',
+        subtitle: 'Поднимем ваш сайт в поисковой выдаче',
         imgSizeSmPath: './assets/header-bg_sm.jpg',
         imgSizeMdPath: './assets/header-bg_md.jpg',
         imgSizeLgPath: './assets/header-bg_lg.jpg',
@@ -14,12 +14,6 @@
 
       <main>
         <div class="container">
-          @@include('./SectionTitle/index.html', {
-            title: 'Наша специализация',
-            textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
-            underLineColor: '#828282',
-          })
-
           <section class="promotion">
             @@include('./SectionTitle/index.html', {
               title: 'В чем мы сильны?',
@@ -249,7 +243,17 @@
             underLineColor: '#828282',
           })
           
-          @@include('../assets/bg-slider-header.svg')
+          <div class="instruments-wraper__bg">
+            <svg class="" viewBox="0 0 1900 176" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M0 33.0091V176H1900V33.0091C1740.06 33.0091 1493.39 33.0091 1333.45 33.0091C1291.14 33.0091 1125.76 34.7682 1096.75 31.3318C1030.29 23.4588 991.005 -9.54914 910.729 2.69382C878.823 7.55966 854.013 18.0489 825.549 25.1705C788.078 34.5455 760.797 33.0091 717.571 33.0091C478.381 33.0091 239.19 33.0091 0 33.0091H0Z" fill="url(#paint0_linear_73_936)" fill-opacity="0.22"/>
+              <defs>
+              <linearGradient id="paint0_linear_73_936" x1="950" y1="0" x2="950" y2="176" gradientUnits="userSpaceOnUse">
+              <stop stop-color="#6C6C6C"/>
+              <stop offset="1" stop-opacity="0"/>
+              </linearGradient>
+              </defs>
+            </svg>
+          </div>
 
           <div class="slick-slider">
             <div class="slider-item">
