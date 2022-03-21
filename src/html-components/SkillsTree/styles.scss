@@ -51,6 +51,42 @@
       width: 100%;
       margin-top: 0;
     }
+
+    @media (any-hover: hover) {
+      &:hover.skills-item__left,
+      &:hover.skills-item__right {
+        .skills-tree__item {
+          cursor: pointer;
+
+          .title {
+            background: linear-gradient(180deg, #ae2dbe 0%, #4b33a1 100%);
+          }
+        }
+
+        .icone {
+          cursor: pointer;
+          background: linear-gradient(180deg, #ae2dbe 0%, #4b33a1 100%);
+
+          width: 140px;
+          height: 140px;
+          top: -26px;
+          left: 5px;
+
+          @media screen and (max-width: 1440px) {
+            width: 65px;
+            height: 65px;
+            top: -5px;
+            left: 0px;
+          }
+          @media screen and (max-width: 768px) {
+            width: 60px;
+            height: 60px;
+            top: -0px;
+            left: 0px;
+          }
+        }
+      }
+    }
   }
 
   .skill-item-wraper:nth-last-child(1) {
@@ -179,6 +215,7 @@
     flex-direction: column;
     box-shadow: 0px 0px 8px 7px rgba(0, 0, 0, 0.14);
     border-radius: 17px;
+    width: 100%;
     max-width: 622px;
     margin-bottom: 39px;
     position: relative;
@@ -189,7 +226,6 @@
     }
 
     @media screen and (max-width: 768px) {
-      width: 100%;
       max-width: 100%;
       margin-right: 0;
     }
@@ -214,7 +250,7 @@
 
       @media screen and (max-width: 768px) {
         font-size: 16px;
-        padding: 6px;
+        padding: 6.2px;
 
         &::before {
           content: "";
@@ -262,6 +298,7 @@
     background: linear-gradient(180deg, #17a6d6 0%, #4b33a1 100%);
     top: -15px;
     position: relative;
+    transition: all 0.2s;
 
     img,
     svg {
@@ -290,7 +327,7 @@
     @media screen and (max-width: 768px) {
       position: absolute;
       transform: translateY(-30%);
-      top: 2px;
+      top: 3.2px;
       z-index: 1;
 
       &::after {

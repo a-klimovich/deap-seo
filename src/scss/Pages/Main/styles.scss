@@ -20,7 +20,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 75px 0;
-    background-image: url("../../../assets//section-abut-bg-lg.jpg");
+    background-image: url("../assets//section-abut-bg-lg.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -55,7 +55,7 @@
     }
 
     @media screen and (max-width: 1024px) {
-      background-image: url("../../../assets//section-abut-bg-md.jpg");
+      background-image: url("../assets//section-abut-bg-md.jpg");
       padding-top: 36px;
       padding-bottom: 44px;
 
@@ -70,7 +70,7 @@
     }
 
     @media screen and (max-width: 768px) {
-      background-image: url("../../../assets//section-abut-bg-sm.jpg");
+      background-image: url("../assets//section-abut-bg-sm.jpg");
       padding-top: 23px;
       padding-bottom: 30px;
 
@@ -146,7 +146,7 @@
     align-items: center;
     height: 365px;
     padding: 75px 0 86px 0;
-    background-image: url("../../../assets/pre-footer.jpg");
+    background-image: url("../assets/pre-footer.jpg");
     background-position: center;
     background-repeat: no-repeat;
     background-size: 100% 100%;
@@ -176,7 +176,7 @@
       }
 
       background-size: cover;
-      background-image: url("../../../assets/pre-footer-bg-md.jpg");
+      background-image: url("../assets/pre-footer-bg-md.jpg");
     }
 
     @media screen and (max-width: 768px) {
@@ -197,7 +197,7 @@
     }
 
     @media screen and (max-width: 360px) {
-      background-image: url("../../../assets/pre-footer-bg-sm.jpg");
+      background-image: url("../assets/pre-footer-bg-sm.jpg");
     }
   }
 }
