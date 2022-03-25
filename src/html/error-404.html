@@ -3,11 +3,17 @@
   @@include('./utils/head.html')
   <body>
     <div class="wrapper">
-      <header class="header hedaer_error">
-        @@include('./Header/Contacts/index.html')
+      <header class="header hedaer_error header_content">
+        <div class="header-content-nav">
+          @@include('./Header/Contacts/index.html')
+          <div class="nav-menu">
+            <div class="container">
+              @@include('./Header/Nav/index.html')
+            </div>
+          </div>
+        </div>
+
         <div class="container">
-          @@include('./Header/Nav/index.html')
-      
           <div class="header__content">
             <a class="link-get-back" href="#">Вернуться на главную</a>
             <h1 class="title">Упсс... Что-то пошло не так...</h1>

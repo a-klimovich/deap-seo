@@ -33,10 +33,8 @@
   let windowScrollPositionY = window.scrollY;
   let userScreen = document.body.clientWidth;
 
-  if (userScreen < 1222) {
+  if (userScreen < 1222 && animatedScreen) {
     animatedScreen.replaceWith($headerBgImage);
-  } else {
-
   }
 
   if (animatedScreen) {

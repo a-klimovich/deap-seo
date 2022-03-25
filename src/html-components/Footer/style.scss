@@ -7,7 +7,6 @@
   position: relative;
 
   &__bg-image {
-    z-index: -1;
     position: absolute;
     top: 0;
     left: 0;
@@ -58,6 +57,7 @@
   }
 
   .list-wrapper {
+    z-index: 2;
     width: 100%;
     max-width: 906px;
     justify-content: space-around;
@@ -99,6 +99,7 @@
   }
 
   &__social {
+    z-index: 2;
     margin-right: auto;
 
     .logo {
