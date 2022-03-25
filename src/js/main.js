@@ -18,9 +18,26 @@
     ".fishs-extras.fishs-extras_coral-group"
   );
   const boat = document.querySelector(".boat-wrapper");
+  const $headerBgImage = document.createElement("div");
+  $headerBgImage.className = "header__bg-image";
+  $headerBgImage.innerHTML = `<picture>
+      <source media="(min-width: 1024px)"
+              srcset="./assets/header-bg_lg.jpg">
+      <source media="(min-width: 440px)"
+              srcset="./assets/header-bg_md.jpg">
+      <source srcset="./assets/header-bg_sm.jpg">
+      <img src="./assets/header-bg_lg.jpg" alt=""/>
+    </picture>`;
 
   let isVideoPLay = false;
   let windowScrollPositionY = window.scrollY;
+  let userScreen = document.body.clientWidth;
+
+  if (userScreen < 1222) {
+    animatedScreen.replaceWith($headerBgImage);
+  } else {
+
+  }
 
   if (animatedScreen) {
     let animateHeaderHeight = animatedScreen.offsetHeight;

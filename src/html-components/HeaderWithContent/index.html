@@ -1,0 +1,28 @@
+<header class="header header_content">
+  <div class="header-content-nav">
+    @@include('./Header/Contacts/index.html')
+    <div class="nav-menu">
+      <div class="container">
+        @@include('./Header/Nav/index.html')
+      </div>
+    </div>
+  </div>
+  
+  <div class="container container_absolute">
+    <div class="header__content">
+      <h1 class="title">@@title</h1>
+      <p class="subtitle">@@subtitle</p>
+    </div>
+  </div>
+
+  <div class="header__bg-image">
+    <picture>
+      <source media="(min-width: 1024px)"
+              srcset="@@imgSizeLgPath">
+      <source media="(min-width: 440px)"
+              srcset="@@imgSizeMdPath">
+      <source srcset="@@imgSizeSmPath">
+      <img src="@@imgDefault" alt=""/>
+    </picture>
+  </div>
+</header>

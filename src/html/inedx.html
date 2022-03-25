@@ -3,7 +3,14 @@
   @@include('./utils/head.html')
   <body>
     <div class="wrapper">
-      @@include('./HeaderAnimation/index.html')
+      @@include('./HeaderWithAnimation/index.html', {
+        title: 'Продвижение сайта',
+        subtitle: 'Поднимем ваш сайт в поисковой выдаче',
+        imgSizeSmPath: './assets/header-bg_sm.jpg',
+        imgSizeMdPath: './assets/header-bg_md.jpg',
+        imgSizeLgPath: './assets/header-bg_lg.jpg',
+        imgDefault: './assets/header-bg_lg.jpg'
+      })
 
       <main>
         <div class="main-page">

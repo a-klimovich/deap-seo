@@ -5,6 +5,10 @@
   height: 100vh;
   overflow: hidden;
 
+  @media screen and (max-width: 1222px) {
+    display: none;
+  }
+
   // flash blick
   .flash-blick {
     position: absolute;
@@ -51,6 +55,7 @@
   .coral-left {
     position: absolute;
     max-width: 100%;
+    width: 62%;
     bottom: 0;
     left: 0;
     z-index: 1;
@@ -58,6 +63,7 @@
   .coral-right {
     position: absolute;
     max-width: 100%;
+    width: 25%;
     bottom: 0;
     right: 0;
   }
