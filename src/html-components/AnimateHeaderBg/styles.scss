@@ -1,0 +1,263 @@
+.animate-screen {
+  position: relative;
+  background-color: #fff;
+  width: 100%;
+  height: 100vh;
+  overflow: hidden;
+
+  // flash blick
+  .flash-blick {
+    position: absolute;
+    bottom: 5%;
+    left: 70%;
+    width: 47px;
+    height: 47px;
+    border-radius: 50%;
+    background: #fff;
+    background: radial-gradient(circle,#ffffff63 10%,transparent 70%);
+
+    &_small {
+      left: 45%;
+      bottom: 35%;
+      width: 32px;
+      height: 32px;
+    }
+  }
+  // flash blick END
+
+  // WAVES
+  .wave-1,
+  .wave-2,
+  .wave-3 {
+    position: absolute;
+    width: 100%;
+    bottom: 0;
+  }
+
+  .wave-1 {
+    min-height: 880.34px;
+  }
+
+  .wave-2 {
+    min-height: 786.18px;
+  }
+
+  .wave-3 {
+    min-height: 694.32px;
+  }
+  // WAVES END
+
+  // CORALS
+  .coral-left {
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    left: 0;
+    z-index: 1;
+  }
+  .coral-right {
+    position: absolute;
+    max-width: 100%;
+    bottom: 0;
+    right: 0;
+  }
+  // CORALS END
+
+  // FISH WITH TEXT
+  .fish-with-text {
+    position: absolute;
+
+    img {
+      width: 100%;
+      height: 100%;
+    }
+
+    &.turtle {
+      bottom: 42%;
+      left: 14%;
+      max-width: 180px;
+      max-height: 107px;
+
+      &::after {
+        content: "title";
+        position: absolute;
+        color: hsl(0deg 0% 100% / 31%);
+        left: 40%;
+        font-size: 1.8rem;
+        top: 9%;
+        letter-spacing: -0.1rem;
+        font-weight: 400;
+        transform: rotate3d(1, -1, -1, 25deg);
+      }
+    }
+
+    &.fish-1 {
+      right: 762px;
+      bottom: 422px;
+      z-index: 0;
+
+      &::after {
+        content: "PPC";
+        position: absolute;
+        color: rgba(255, 255, 255, 20%);
+        top: 40%;
+        left: 43%;
+        font-size: 1rem;
+        letter-spacing: -0.1rem;
+        font-weight: 500;
+        transform: rotate3d(11, -8, -21, 42deg) skewX(-21deg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(25deg,rgb(190 90 155 / 68%) 40%,hsla(0,0%,100%,.6) 70%);
+      }
+    }
+
+    &.fish-2 {
+      right: 214px;
+      bottom: 306px;
+      z-index: 0;
+
+      &::after {
+        content: "SMM";
+        position: absolute;
+        color: rgba(255, 255, 255, 20%);
+        left: 30%;
+        font-size: 1.7rem;
+        top: 40.3%;
+        letter-spacing: 0rem;
+        font-weight: 500;
+        transform: rotate3d(1.8, 2, -1.2, 68deg) skew(-47deg, -15.6deg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(0deg,rgb(215 101 158) 40%,hsla(0,0%,100%,.6) 70%);
+      }
+    }
+
+    &.fish-3 {
+      right: 377px;
+      bottom: 55px;
+      z-index: 1;
+
+      &::after {
+        content: "keywords";
+        position: absolute;
+        color: rgba(255, 255, 255, 20%);
+        left: 42%;
+        font-size: 1rem;
+        top: 43%;
+        letter-spacing: 0rem;
+        font-weight: 500;
+        transform: rotate3d(1.5, -2.7, 1.4, -48deg);
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(21.7deg,rgb(24 153 214) 30%,hsla(0,0%,100%,.6) 70%);
+      }
+    }
+  }
+  // FISH WITH TEXT END
+
+  // FISH GROUP DECORATOR
+  .fishs-extras {
+    position: absolute;
+    right: 0;
+    top: 50%;
+
+    &_coral-group {
+      left: 330px;
+      bottom: 5%;
+      z-index: 1;
+      right: auto;
+      top: auto;
+    }
+
+    &_out-boat-group {
+      right: 15.5%;
+      bottom: 10.5%;
+      top: auto;
+    }
+
+    &_f2 {
+      left: 780px;
+      bottom: 91px;
+      top: auto;
+    }
+    &_f3 {
+      left: 780px;
+      bottom: 222px;
+      top: auto;
+    }
+    &_f4 {
+      left: 14%;
+      bottom: 62%;
+      top: auto;
+    }
+  }
+  // FISH GROUP DECORATOR END
+
+  // BOAT
+  .boat-wrapper {
+    position: absolute;
+    right: 160px;
+    bottom: 280px;
+    perspective: 100px;
+
+    &::after {
+      content: "DepthsSEO";
+      position: absolute;
+      bottom: 27.1%;
+      z-index: 2;
+      right: 38.8%;
+      font-size: 22px;
+      letter-spacing: -1px;
+      font-weight: 500;
+      transform: rotate3d(-.8,0,-5,50.6deg) skew(-51.6deg,16.8deg);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-image: linear-gradient(5deg,rgba(35,145,237,.82) 30%,hsla(0,0%,100%,.63) 70%);
+    }
+
+    .boat {
+      position: relative;
+      z-index: 2;
+    }
+
+    .boat-bubles {
+      position: absolute;
+      top: -43px;
+      right: -62px;
+    }
+
+    .boat-round-light {
+      position: absolute;
+      left: 40px;
+      bottom: 10px;
+      border-radius: 50%;
+      width: 465px;
+      height: 465px;
+      transform: translate(-40%, 40%);
+      background: rgb(255, 255, 255);
+      background: radial-gradient(circle, #aea4d0 -10%, hsla(0, 0%, -20%, 0) 70%);
+      z-index: 1;
+    }
+
+    .boat-line-light {
+      position: absolute;
+      left: -190px;
+      bottom: -342px;
+      z-index: 0;
+      width: 389px;
+      height: 747px;
+      background: #fff;
+      background: linear-gradient(
+        to top,
+        rgb(1 95 191 / 32%) 40%,
+        rgb(255 255 255 / 60%) 70%
+      );
+      transform-style: preserve-3d;
+      transform: rotateX(74deg) rotate(28deg) scale(0.8) skewY(-26deg);
+      border: 20px solid rgb(1 95 191 / 10%);
+      box-shadow: inset 20px -15px 120px 0px rgb(141 198 231 / 57%);
+    }
+  }
+  // BOAT END
+}

@@ -3,22 +3,31 @@
 .header {
   position: relative;
 
+  &_absolute-navigation {
+    .contacts-wrapper {
+      position: absolute;
+      width: 100%;
+      z-index: 99;
+    }
+
+    .container_absolute {
+      position: absolute;
+      z-index: 99;
+      width: 100%;
+      margin: 0 auto;
+      top: 71px;
+      left: 50%;
+      transform: translateX(-50%);
+    }
+  }
+
   &__bg-image {
     width: 100%;
     z-index: 0;
-    margin-top: -100px;
 
     img {
-      max-height: calc(100vh - 71px);
       width: 100%;
       object-fit: cover;
-    }
-
-    @media screen and (max-width: 1024px) {
-      margin-top: -84px;
-    }
-    @media screen and (max-width: 768px) {
-      margin-top: -35px;
     }
   }
 
