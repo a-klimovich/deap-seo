@@ -14,6 +14,17 @@
       <p class="subtitle">@@subtitle</p>
     </div>
   </div>
+
+  <div class="header__bg-image">
+    <picture>
+      <source media="(min-width: 1024px)"
+              srcset="@@imgSizeLgPath">
+      <source media="(min-width: 440px)"
+              srcset="@@imgSizeMdPath">
+      <source srcset="@@imgSizeSmPath">
+      <img src="@@imgDefault" alt=""/>
+    </picture>
+  </div>
   
   @@include('./AnimateHeaderBg/index.html')
 </header>

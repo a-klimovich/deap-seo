@@ -4,4 +4,11 @@
     width: 100%;
     z-index: 100;
   }
+
+  .header__bg-image {
+    display: none;
+    @media screen and (max-width: 1222px) {
+      display: block;
+    }
+  }
 }
