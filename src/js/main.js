@@ -21,7 +21,7 @@
   const $headerBgImage = document.createElement("div");
   $headerBgImage.className = "header__bg-image";
   $headerBgImage.innerHTML = `<picture>
-      <source media="(min-width: 1024px)"
+      <source media="(min-width: 1222px)"
               srcset="./assets/header-bg_lg.jpg">
       <source media="(min-width: 440px)"
               srcset="./assets/header-bg_md.jpg">

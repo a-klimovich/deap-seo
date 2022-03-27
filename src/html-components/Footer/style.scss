@@ -48,6 +48,11 @@
 
     li {
       margin-bottom: 29px;
+      cursor: pointer;
+
+      &:hover a {
+        color: #2d9cdb;
+      }
 
       a {
         font-size: 18px;
@@ -127,6 +132,10 @@
         font-size: 18px;
         line-height: 22px;
       }
+
+      &:hover a {
+        color: #2d9cdb;
+      }
     }
     
     .phone {
@@ -168,11 +177,19 @@
       svg {
         width: 39px;
         height: 39px;
+
+        path {
+          transition: all .2s;
+        }
       }
 
       &_viber svg {
         width: 41px;
         height: 45px;
+      }
+
+      &:hover svg path {
+        fill: #2d9cdb;
       }
     }
 
@@ -222,6 +239,10 @@
 
       .social-item {
         margin-right: 36px;
+
+        &:hover svg path {
+          fill: #2d9cdb;
+        }
 
         @media screen and (max-width: 540px) {
           margin-right: 25px;

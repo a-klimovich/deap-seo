@@ -15,6 +15,15 @@
       padding-bottom: 43px;
       padding-top: 30px;
     }
+
+    .social-item:hover svg path {
+      fill: #6fcf97;
+    }
+
+    a:hover, 
+    ul li:hover a {
+      color: #6fcf97;
+    }
   }
 
   .footer__same-communications {

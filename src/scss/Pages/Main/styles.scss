@@ -111,6 +111,15 @@
     .logo-item {
       width: 320px;
       height: 170px;
+      -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+      filter: grayscale(100%);
+
+      transition: filter 0.3s;
+      cursor: pointer;
+
+      &:hover {
+        filter: grayscale(0%);
+      }
     }
 
     @media screen and (max-width: 1024px) {

@@ -3,7 +3,7 @@
   @@include('./utils/head.html')
   <body>
     <div class="wrapper">
-      @@include('./HeaderWithContent/index.html', {
+      @@include('./HeaderWithAnimation/index.html', {
         title: 'Контакты',
         subtitle: 'Свяжитесь с нами',
         imgSizeSmPath: './assets/header-bg_sm.jpg',
@@ -11,24 +11,21 @@
         imgSizeLgPath: './assets/header-bg_lg.jpg',
         imgDefault: './assets/header-bg_lg.jpg'
       })
+      
 
       <main>
         <div class="container">
           <section class="contacts">
-            @@include('./SectionTitle/index.html', {
+            @@include('./SectionTitle/BlueTitle.html', {
               title: 'Напишите команде DepthsSEO',
-              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
-              underLineColor: '#828282',
             })
   
             <p class="subtitle">Лучший способ преодолеть проблему - начать работать над ней!</p>
 
             @@include('./ContactForm/index.html')
 
-            @@include('./SectionTitle/index.html', {
+            @@include('./SectionTitle/BlueTitle.html', {
               title: 'Команда DepthsSEO',
-              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
-              underLineColor: '#828282',
             })
 
             <div class="contacts__team">
@@ -77,10 +74,8 @@
              
             </div>
 
-            @@include('./SectionTitle/index.html', {
+            @@include('./SectionTitle/BlueTitle.html', {
               title: 'Адрес',
-              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
-              underLineColor: '#828282',
             })
 
             <div class="location">

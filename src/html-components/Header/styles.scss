@@ -13,6 +13,13 @@
       height: 100%;
       object-fit: cover;
     }
+
+    @media screen and (max-width: 1222px) {
+      height: auto;
+      img {
+        object-fit: cover;
+      }
+    }
   }
 
   &__content {

@@ -3,7 +3,7 @@
   @@include('./utils/head.html')
   <body>
     <div class="wrapper">
-      @@include('./HeaderWithContent/index.html', {
+      @@include('./HeaderWithAnimation/index.html', {
         title: 'Продвижение сайта',
         subtitle: 'Поднимем ваш сайт в поисковой выдаче',
         imgSizeSmPath: './assets/header-bg_sm.jpg',
@@ -15,10 +15,8 @@
       <main>
         <div class="container">
           <section class="promotion">
-            @@include('./SectionTitle/index.html', {
+            @@include('./SectionTitle/BlueTitle.html', {
               title: 'В чем мы сильны?',
-              textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
-              underLineColor: '#828282',
             })
 
             <div class="promotion__subtitle">
@@ -239,10 +237,8 @@
         </div>
 
         <div class="instruments-wraper">
-          @@include('./SectionTitle/index.html', {
+          @@include('./SectionTitle/BlueTitle.html', {
             title: 'В чем мы сильны?',
-            textColor: 'linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%)',
-            underLineColor: '#828282',
           })
           
           <div class="instruments-wraper__bg">
