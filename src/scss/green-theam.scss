@@ -2,6 +2,15 @@
 
 .green-theam {
   header {
+    .social-item:hover svg path {
+      fill: #6fcf97;
+    }
+
+    .contact a:hover,
+    .lang a:hover {
+      color: #6fcf97;
+    }
+
     .contacts-wrapper {
       background: $dark-green;
     }

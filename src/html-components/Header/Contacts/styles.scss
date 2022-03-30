@@ -18,6 +18,10 @@
       justify-content: space-between;
     }
 
+    .social-item:hover svg path {
+      fill: #56ccf2;
+    }
+
     .social {
       display: flex;
       align-items: flex-start;
@@ -31,6 +35,9 @@
       .social-item {
         display: inline-flex;
         margin-right: 18px;
+        svg path {
+          transition: all .2s;
+        }
       }
     }
 
@@ -42,6 +49,10 @@
 
       a {
         color: $white;
+
+        &:hover {
+          color: #56ccf2;
+        }
       }
 
       .contact-phone,
@@ -66,6 +77,10 @@
       a {
         color: $white;
         margin-right: 10px;
+
+        &:hover {
+          color: #56ccf2;
+        }
       }
     }
   }
