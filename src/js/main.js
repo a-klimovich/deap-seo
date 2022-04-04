@@ -100,4 +100,27 @@
         .classList.toggle("hidden");
     });
   }
+
+  // GALERY
+    // baguetteBox.run(".news-context__images-wrapper");
+
+    baguetteBox.run('.news-context__images-wrapper', {
+      animation: 'fadeIn',
+      noScrollbars: true,
+    });
+  // GALERY END
+
+  if ($("#newslist")) {
+    $(".blog-card").slice(0, 6).show();
+
+    $("#loadMore").on("click", function(e){
+      e.preventDefault();
+
+      $(".blog-card:hidden").slice(0, 6).show();
+
+      if($(".blog-card:hidden").length == 0) {
+        $("#loadMore").remove();
+      }
+    });
+  }
 })();
