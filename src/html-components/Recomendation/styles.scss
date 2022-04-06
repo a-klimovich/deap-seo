@@ -134,7 +134,14 @@
       }
 
       &-item svg path {
+        transition: all .2s;
         fill: #015fbf;
+      }
+
+      &-item:hover {
+        svg path {
+          fill: #56ccf2;
+        }
       }
     }
 
