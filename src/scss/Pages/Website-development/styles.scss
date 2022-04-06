@@ -253,6 +253,17 @@
         border: 2px solid #6fcf97;
         box-sizing: border-box;
         border-radius: 10px;
+        transition: all 0.5s;
+
+        &:hover {
+          background: #FFFFFF;
+          span {
+            font-weight: 500;
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-image: linear-gradient(180deg, #389A77 19.27%, #175842 100%);
+          }
+        }
 
         @media screen and (max-width: 1250px) {
           margin-top: 20px;

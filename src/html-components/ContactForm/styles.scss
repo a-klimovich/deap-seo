@@ -210,6 +210,18 @@
     font-size: 18px;
     line-height: 22px;
     color: $white;
+    transition: all 0.5s;
+
+    &:hover {
+      background: #FFFFFF;
+      
+      span {
+        font-weight: 500;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+      }
+    }
 
     @media screen and (max-width: 1250px) {
       bottom: 0;

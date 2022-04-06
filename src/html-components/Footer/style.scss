@@ -269,6 +269,18 @@
     box-sizing: border-box;
     border-radius: 10px;
 
+    &:hover {
+      background: #FFFFFF;
+
+      border: 2px solid #00AFF2;
+      span {
+        font-weight: 500;
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        background-image: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+      }
+    }
+
     @media screen and (max-width: 1205px) {
       margin-top: 20px;
       position: static;

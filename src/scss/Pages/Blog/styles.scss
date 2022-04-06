@@ -1,3 +1,5 @@
+@import '../../variables';
+
 .blog {
   padding-top: 31px;
   padding-bottom: 45px;
@@ -65,7 +67,7 @@
     border: none;
     width: 231px;
     height: 62px;
-    background: #ffffff;
+    background: linear-gradient(180deg, #ffffff 0%, #ffffff 100%);
     box-shadow: 0px 0px 20px 4px rgba(0, 0, 0, 0.12);
     border-radius: 12px;
 
@@ -75,7 +77,12 @@
 
     text-align: center;
     letter-spacing: -0.02em;
-
+    transition: all 0.3s;
     color: #015fbf;
+
+    &:hover {
+      background: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+      color: $white;
+    }
   }
 }
