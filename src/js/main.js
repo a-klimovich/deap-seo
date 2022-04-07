@@ -123,4 +123,41 @@
       }
     });
   }
+
+  
+  const btnSendFormMessage = $('#sendFormMessage')
+  const requestTrue = true;
+
+  if (btnSendFormMessage) {
+    btnSendFormMessage.on('click', (e) => {
+      e.preventDefault;
+
+      const popUpWrapper = document.createElement("div");
+      const popUpMessage = document.createElement("span")
+      const messageOk = 'Ваше сообщение успешно отправлено';
+      const messageNotOk = 'Хммм... Что-то пошло не так';
+
+      popUpWrapper.classList.add('pop-up');
+
+      if (requestTrue) {
+        popUpWrapper.classList.add('good');
+        popUpWrapper.innerHTML = `<img src="./assets/icon/correct.png" alt="">`;
+        popUpMessage.innerHTML = messageOk;
+      }else {
+        popUpWrapper.innerHTML = `<img src="./assets/icon/cross.png" alt="">`;
+        popUpWrapper.classList.add('bead');
+        popUpMessage.innerHTML = messageNotOk;
+      }
+
+      popUpWrapper.appendChild(popUpMessage);
+
+      $('body').append(popUpWrapper);
+
+      setTimeout(function(){
+        $('.pop-up').remove();
+      }, 3500);
+    })
+  }
+
+  
 })();
