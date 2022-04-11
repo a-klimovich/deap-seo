@@ -5,6 +5,30 @@
   flex-direction: column;
   margin-bottom: 46px;
 
+  ul {
+    padding-left: 1.2em;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 27px;
+    letter-spacing: -.02em;
+    color: #4f4f4f;
+    margin: 1em 0;
+
+    li {
+      margin-bottom: .4em;
+    }
+
+    @media screen and (max-width: 1024px) {
+      font-size: 22px;
+      line-height: 27px;
+    }
+
+    @media screen and (max-width: 768px) {
+      font-size: 14px;
+      line-height: 17px;
+    }
+  }
+
   @media screen and (max-width: 768px) {
     margin-bottom: 16px;
   }
