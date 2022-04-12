@@ -1,4 +1,4 @@
-@import '../../variables';
+@import "../../variables";
 
 .blog {
   padding-top: 31px;
@@ -14,25 +14,34 @@
   }
 
   &__subtitle {
-    font-weight: 500;
-    font-size: 22px;
-    line-height: 27px;
-    text-align: center;
-    letter-spacing: -0.02em;
     margin-top: 27px;
     margin-bottom: 83px;
 
+    p {
+      font-weight: 500;
+      font-size: 22px;
+      line-height: 27px;
+      text-align: center;
+      letter-spacing: -0.02em;
+    }
+
     @media screen and (max-width: 1024px) {
-      font-size: 18px;
-      line-height: 17px;
       margin-top: 25px;
       margin-bottom: 36px;
+
+      p {
+        font-size: 18px;
+        line-height: 20px;
+      }
     }
     @media screen and (max-width: 768px) {
-      font-size: 14px;
-      line-height: 16px;
       margin-top: 10px;
       margin-bottom: 22px;
+
+      p {
+        font-size: 14px;
+        line-height: 16px;
+      }
     }
   }
 
@@ -81,7 +90,7 @@
     color: #015fbf;
 
     &:hover {
-      background: linear-gradient(180deg, #17A6D6 0%, #4B33A1 100%);
+      background: linear-gradient(180deg, #17a6d6 0%, #4b33a1 100%);
       color: $white;
     }
   }
