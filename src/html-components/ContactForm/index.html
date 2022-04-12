@@ -1,11 +1,11 @@
-<form class="contacts-form" action="">
+<form class="contacts-form" action="#">
   <div class="form-section">
     <div class="name-mail-wrapper">
-      <input type="text" placeholder="Ваше имя*">
-      <input type="text" placeholder="Ваш  e-mail*">
+      <input type="text" placeholder="Ваше имя*" required>
+      <input type="text" placeholder="Ваш  e-mail*" required>
     </div>
 
-    <input type="text" placeholder="Телефон*">
+    <input type="text" placeholder="Телефон*" required>
   </div>
 
   <div class="form-section">
@@ -16,7 +16,7 @@
         <p>Прикрепить файл</p>
       </label>
       <input id="file-upload" type="file"/>
-      <button type="button" class="contacts-form__send-btn" id="sendFormMessage"><span>Отправить</span></button>
+      <button type="submit" id="sendContactsFormMessage" class="contacts-form__send-btn"><span>Отправить</span></button>
     </div>
   </div>
 </form>
