@@ -22,6 +22,7 @@
   let isVideoPLay = false;
   let windowScrollPositionY = window.scrollY;
   let userScreen = document.body.clientWidth;
+  let userScreenH = document.body.clientHeight;
 
   if (userScreen > 1239 && animatedScreen) {
     let animateHeaderHeight = animatedScreen.offsetHeight;
@@ -32,14 +33,14 @@
       windowScrollPositionY = window.scrollY;
 
       if (windowScrollPositionY < animateHeaderHeight) {
-        boat.style.bottom = -windowScrollPositionY + 280 + "px";
-        boat.style.right = windowScrollPositionY + 160 + "px";
+        boat.style.bottom = `calc(${-windowScrollPositionY}px + ${15}%)`;
+        boat.style.right = `calc(${windowScrollPositionY}px + ${15}%)`;
 
-        fishWithText1.style.right = windowScrollPositionY / 4 + 762 + "px";
-        fishWithText1.style.bottom = -windowScrollPositionY / 4 + 422 + "px";
+        fishWithText1.style.right = `calc(${windowScrollPositionY / 4} + 59%)`;
+        fishWithText1.style.bottom = `calc(${-windowScrollPositionY / 4} + 43%)`;
 
-        fishWithText2.style.right = windowScrollPositionY / 1.5 + 214 + "px";
-        fishWithText2.style.bottom = -windowScrollPositionY / 6 + 306 + "px";
+        fishWithText2.style.right = `calc(${windowScrollPositionY / 1.5}px + 15%)`;
+        fishWithText2.style.bottom = `calc(${-windowScrollPositionY / 6}px + 33%)`;
 
         fishWithText3.style.right = windowScrollPositionY / 4 + 377 + "px";
         fishWithText3.style.bottom = -windowScrollPositionY / 5 + 55 + "px";
@@ -56,17 +57,19 @@
     });
   }
 
+  const scaleBoath = userScreen < 1440 && userScreenH < 768 ? 0.8 : 1;
+
   function paralax(e) {
     const positiveParalax = (element, speed, offsetScale) => {
       const x = (window.innerWidth - e.pageX * speed) / offsetScale;
       const y = (window.innerHeight - e.pageY * speed) / offsetScale;
-      element.style.transform = `translate(${x}px, ${y}px)`;
+      element.style.transform = `translate(${x}px, ${y}px) scale(${scaleBoath})`;
     };
 
     const negotiveParalax = (element, speed, offsetScale) => {
       const x = (window.innerWidth + e.pageX * speed) / offsetScale;
       const y = (window.innerHeight + e.pageY * speed) / offsetScale;
-      element.style.transform = `translate(${x}px, ${y}px)`;
+      element.style.transform = `translate(${x}px, ${y}px) scale(${scaleBoath})`;
     };
 
     positiveParalax(boat, 2, 40);

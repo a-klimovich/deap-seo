@@ -98,8 +98,8 @@
     }
 
     &.fish-1 {
-      right: 762px;
-      bottom: 422px;
+      right: 55%;
+      bottom: 43%;
       z-index: 0;
 
       &::after {
@@ -119,8 +119,8 @@
     }
 
     &.fish-2 {
-      right: 214px;
-      bottom: 306px;
+      right: 15%;
+      bottom: 33%;
       z-index: 0;
 
       &::after {
@@ -203,9 +203,14 @@
   // BOAT
   .boat-wrapper {
     position: absolute;
-    right: 160px;
-    bottom: 280px;
+    right: 15%;
+    bottom: 15%;
     perspective: 100px;
+    transform: scale(1);
+
+    @media screen and (max-width: 1440px) and (max-height: 768px) {
+      transform: scale(0.8);
+    }
 
     &::after {
       content: "DepthsSEO";
